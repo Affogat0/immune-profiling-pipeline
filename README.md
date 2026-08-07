@@ -8,19 +8,22 @@ the kind used in clinical trial biomarker analysis.
 🚧 In progress
 
 ## Pipeline overview
+
+```text
 FCS files (raw)
-↓
-QC & Validation — event counts, marker panel consistency, malformed-file flags
-↓
-Compensation & Transformation — spillover correction, arcsinh/logicle transform
-↓
-Population Identification — rule-based gating (deterministic, not ML)
-↓
-Structured Output — Parquet/SQLite with a defined schema
-↓
-Automatic Report — per-sample QC + population summary (HTML)
-↓
-Cloud upload — results pushed to S3
+        ↓
+QC & Validation
+        ↓
+Compensation & Transformation
+        ↓
+Population Identification
+        ↓
+Structured Output
+        ↓
+Automatic Report
+        ↓
+Cloud Upload
+```
 
 ## Why rule-based gating
 Clinical trial data pipelines need auditable, reproducible logic over black-box predictions.
