@@ -12,7 +12,7 @@ paths:
 compensation_matrix: "data/reference/den_comp.csv"
 
 transform:
-  method: "logicle"
+  method: "arcinh"
   cofactor: 200
 
 gating:
