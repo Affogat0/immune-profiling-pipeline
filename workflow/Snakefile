@@ -1,0 +1,10 @@
+configfile: "config/config.yaml"
+
+include: "rules/qc.smk"
+#include: "rules/compensate.smk"
+#include: "rules/gate.smk"
+#include: "rules/report.smk"
+
+rule all:
+    input:
+        expand("data/processed/{sample}_qc.json", sample=config["samples"])

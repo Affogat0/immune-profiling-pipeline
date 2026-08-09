@@ -1,0 +1,20 @@
+samples:
+  - 101_DEN084Y5_15_E01_008_clean
+  - 101_DEN084Y5_15_E03_009_clean
+  - 101_DEN084Y5_15_E05_010_clean
+
+paths:
+  raw_dir: "data/raw"
+  reference_dir: "data/reference"
+  processed_dir: "data/processed"
+  reports_dir: "reports"
+
+compensation_matrix: "data/reference/den_comp.csv"
+
+transform:
+  method: "logicle"
+  cofactor: 200
+
+gating:
+  viability_channel: "Aqua Amine FLR-A"
+  lineage_markers: ["CD3 APC-H7 FLR-A", "CD4 PE-Cy7 FLR-A", "CD8 PerCP-Cy55 FLR-A"]
