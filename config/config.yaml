@@ -17,4 +17,10 @@ transform:
 
 gating:
   viability_channel: "Aqua Amine FLR-A"
-  lineage_markers: ["CD3 APC-H7 FLR-A", "CD4 PE-Cy7 FLR-A", "CD8 PerCP-Cy55 FLR-A"]
+  viability_threshold: 1.3
+  lineage_channel: "CD3 APC-H7 FLR-A"
+  lineage_threshold: 1.75
+  cd4_channel: "CD4 PE-Cy7 FLR-A"
+  cd4_threshold: 2.4
+  cd8_channel: "CD8 PerCP-Cy55 FLR-A"
+  cd8_threshold: 3.15
