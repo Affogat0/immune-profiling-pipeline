@@ -3,11 +3,8 @@ configfile: "config/config.yaml"
 include: "rules/qc.smk"
 include: "rules/compensate.smk"
 include: "rules/gate.smk"
-#include: "rules/report.smk"
+include: "rules/report.smk"
 
 rule all:
     input:
-        expand("data/processed/{sample}_qc.json", sample=config["samples"]),
-        expand("data/processed/{sample}_compensated.parquet", sample=config["samples"]),
-        expand("data/processed/{sample}_gated.parquet", sample=config["samples"]),
-        expand("data/processed/{sample}_population_summary.json", sample=config["samples"])
+        expand("reports/{sample}_qc_report.html", sample=config["samples"])
