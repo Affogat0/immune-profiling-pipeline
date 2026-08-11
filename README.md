@@ -7,7 +7,7 @@ built to demonstrate bioinformatics engineering practices applied to immune prof
 the kind used in clinical trial biomarker analysis.
 
 ## Status
-🚧 In progress
+Core pipeline complete (QC → compensation/transform → gating → report → S3 upload), tested, CI passing
 
 ## Data
 This pipeline uses 3 FCS files from an 8-color ICS panel (FlowKit's example dataset).
