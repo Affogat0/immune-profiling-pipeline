@@ -4,7 +4,8 @@ include: "rules/qc.smk"
 include: "rules/compensate.smk"
 include: "rules/gate.smk"
 include: "rules/report.smk"
+include: "rules/upload.smk"
 
 rule all:
     input:
-        expand("reports/{sample}_qc_report.html", sample=config["samples"])
+        expand("reports/{sample}_upload.done", sample=config["samples"])

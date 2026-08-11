@@ -223,3 +223,6 @@ reports/
 .snakemake/
 data/processed/
 .DS_Store
+reports/*.done
+reports/*.html
+
