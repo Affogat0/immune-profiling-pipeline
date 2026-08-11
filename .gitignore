@@ -222,3 +222,4 @@ data/raw/
 reports/
 .snakemake/
 data/processed/
+.DS_Store
